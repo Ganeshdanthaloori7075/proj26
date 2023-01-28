@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>show the trainer details</h1>
+        <table border="4px">
+            <tr>
+                <th>deptno</th>
+                <th>tname</th>
+                <th>subject</th>
+            </tr>
+            {% for t in tra %}
+            <tr>
+                <td>{{ t.deptno }}</td>
+                <td>{{ t.tname }}</td>
+                <td>{{ t.subject}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+    
+</body>
+</html>
